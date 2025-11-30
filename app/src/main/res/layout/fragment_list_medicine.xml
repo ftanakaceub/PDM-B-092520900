@@ -10,7 +10,7 @@
         android:id="@+id/labelMedicineList"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Medicine List"
+        android:text="Lista de Medicamentos"
         android:textSize="42sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

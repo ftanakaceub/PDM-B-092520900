@@ -49,7 +49,7 @@ class HomeFragment : Fragment() {
 
         userViewModel.user.observe(viewLifecycleOwner) { user ->
             user?.let {
-                binding.labelGreetings.text = "Hello, ${user.name}"
+                binding.labelGreetings.text = "Olá, ${user.name}"
                 medicineViewModel.getNextMedicine(user.id)
             }
         }
