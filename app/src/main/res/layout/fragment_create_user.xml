@@ -7,6 +7,20 @@
     android:padding="24dp"
     tools:context=".ui.fragments.CreateUserFragment">
 
+    <!-- Botão de Voltar -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="0dp"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
     <!-- Título -->
     <TextView
         android:id="@+id/title_new_user"

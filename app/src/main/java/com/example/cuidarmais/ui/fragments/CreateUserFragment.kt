@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.cuidarmais.R
 import com.example.cuidarmais.databinding.FragmentCreateUserBinding
 import com.example.cuidarmais.ui.viewmodels.UserViewModel
 import com.example.cuidarmais.ui.viewmodels.UserViewModelFactory
@@ -30,6 +32,8 @@ class CreateUserFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnBack.setOnClickListener { findNavController().navigate(R.id.loginFragment) }
 
         binding.btnSalvar.setOnClickListener {
             val name = binding.editName.text.toString().trim()
