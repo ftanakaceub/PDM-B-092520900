@@ -97,8 +97,7 @@
             app:layout_constraintTop_toBottomOf="@id/labelDays"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/radioButtonMonday"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintHorizontal_chainStyle="packed" />
+            app:layout_constraintHorizontal_chainStyle="spread_inside" />
 
         <!-- Segunda -->
         <CheckBox
@@ -114,8 +113,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonSunday"
-            app:layout_constraintEnd_toStartOf="@id/radioButtonTuesday"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toStartOf="@id/radioButtonTuesday" />
 
         <!-- Terça -->
         <CheckBox
@@ -131,8 +129,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonMonday"
-            app:layout_constraintEnd_toStartOf="@id/radioButtonWednesday"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toStartOf="@id/radioButtonWednesday" />
 
         <!-- Quarta -->
         <CheckBox
@@ -148,8 +145,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonTuesday"
-            app:layout_constraintEnd_toStartOf="@id/radioButtonThursday"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toStartOf="@id/radioButtonThursday"/>
 
         <!-- Quinta -->
         <CheckBox
@@ -165,8 +161,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonWednesday"
-            app:layout_constraintEnd_toStartOf="@id/radioButtonFriday"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toStartOf="@id/radioButtonFriday" />
 
         <!-- Sexta -->
         <CheckBox
@@ -182,8 +177,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonThursday"
-            app:layout_constraintEnd_toStartOf="@id/radioButtonSaturday"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toStartOf="@id/radioButtonSaturday" />
 
         <!-- Sábado -->
         <CheckBox
@@ -200,8 +194,7 @@
             app:layout_constraintTop_toTopOf="@id/radioButtonSunday"
             app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
             app:layout_constraintStart_toEndOf="@id/radioButtonFriday"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <!-- Horários -->
         <TextView

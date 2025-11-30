@@ -18,7 +18,7 @@ class MedicineItemAdapter(private val medicineList: List<Medicine>) :
         fun bind(medicine: Medicine) {
             binding.labelMedicineName.text = medicine.name
             binding.labelMedicineTime.text =
-                medicine.times.joinToString(", ") { it -> it.toString() }
+                medicine.times.sorted().joinToString(", ") { it -> it.toString() }
             binding.radioButtonSunday.isChecked = medicine.daysOfWeek.contains(DayOfWeek.SUNDAY)
             binding.radioButtonMonday.isChecked = medicine.daysOfWeek.contains(DayOfWeek.MONDAY)
             binding.radioButtonTuesday.isChecked = medicine.daysOfWeek.contains(DayOfWeek.TUESDAY)
