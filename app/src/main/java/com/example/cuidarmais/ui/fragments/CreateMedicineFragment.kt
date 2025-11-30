@@ -52,7 +52,15 @@ class CreateMedicineFragment : Fragment() {
         binding.newTimeButton.setOnClickListener {
             binding.newTimeLayout.visibility = View.VISIBLE
             binding.newTimeButton.visibility = View.GONE
+
+            binding.scrollViewCreateMedicine.post {
+                binding.scrollViewCreateMedicine.smoothScrollTo(
+                    0,
+                    binding.newTimeLayout.top
+                )
+            }
         }
+
 
         binding.btnSaveTime.setOnClickListener {
             val time = LocalTime.of(binding.timePicker.hour, binding.timePicker.minute)
