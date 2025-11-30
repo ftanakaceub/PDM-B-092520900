@@ -56,24 +56,39 @@ Por ser nativo, oferece melhor desempenho, acessibilidade e integração com rec
 2. Abra o projeto no Android Studio (Arctic Fox ou superior).
 3. Aguarde a sincronização das dependências.
 4. Execute o aplicativo utilizando:
-  - Um dispositivo físico Android (API 24+), ou
-  - Um emulador criado no Android Studio.
+    - Um dispositivo físico Android (API 24+), ou
+    - Um emulador criado no Android Studio.
 
 ### Uso
 1. Tela de Login
   - Acesse com uma conta cadastrada ou clique em Criar novo usuário.
+
+  ![Tela Login](https://github.com/user-attachments/assets/43b3cc7c-40e7-4736-970d-b44005a4dbfb)
+
 2. Tela de criação de usuário
   - Insira nome, email e senha.
   - Utilize o botão de voltar caso deseje retornar à tela de login.
+
+  ![Tela Cadastro](https://github.com/user-attachments/assets/f82fa07b-7711-4c81-995f-b098214e6951)
+
 3. Tela Principal
   - Navegue pelo menu inferior entre as telas principais.
   - O menu Home sempre mostrará o próximo medicamento a ser tomado, considerando todos os registrados.
+    
   - O menu Medicamentos mostrará todos os Lembretes cadastrados, os horários e dias da semana definidos para cada um.
+
+  ![Aba Medicamentos](https://github.com/user-attachments/assets/960e57f4-8ca1-4be2-b59f-136269ba5472)
+  
   - O menu Perfil permite visualizar e alterar os dados do usuário.
+
+  ![Aba Perfil](https://github.com/user-attachments/assets/74c0ff1b-ea1d-4136-b41b-6e43ff4be588)
+
 4. Adicionar Lembrete de Medicamento
   - Informe nome, dosagem, dias da semana e horários.
   - Adicione múltiplos horários e visualize a lista organizada automaticamente.
   - O app enviará notificações nos horários definidos.
+
+  ![Tela Adicionar Lembrete](https://github.com/user-attachments/assets/436d0c99-618a-4dae-a223-ba87770a20fe)
 
 
 # 7. Requisitos do sistema
