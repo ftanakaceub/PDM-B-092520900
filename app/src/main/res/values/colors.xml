@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Cores principais -->
+<color name="primary">#4CAF50</color>
+<color name="onPrimary">#FFFFFF</color>
+<color name="primaryContainer">#C8E6C9</color>
+<color name="onPrimaryContainer">#1B5E20</color>
+
+<!-- Secundárias -->
+<color name="secondary">#536DFE</color>
+<color name="onSecondary">#FFFFFF</color>
+<color name="secondaryContainer">#E8EAF6</color>
+<color name="onSecondaryContainer">#1A237E</color>
+
+<!-- Background e superfície -->
+<color name="background">#F5F5F5</color>
+<color name="onBackground">#212121</color>
+<color name="surface">#FFFFFF</color>
+<color name="onSurface">#212121</color>
+
+<!-- Erro -->
+<color name="error">#D32F2F</color>
+<color name="onError">#FFFFFF</color>
+</resources>

@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.CuidarMais" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#81C784</item>
+        <item name="colorOnPrimary">#1B5E20</item>
+
+        <item name="colorSecondary">#8C9EFF</item>
+        <item name="colorOnSecondary">#1A237E</item>
+
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <item name="colorError">#EF9A9A</item>
+        <item name="colorOnError">#B71C1C</item>
+    </style>
+
+    <style name="Theme.CuidarMais" parent="Base.Theme.CuidarMais" />
+</resources>

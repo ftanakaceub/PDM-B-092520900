@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CreateMedicineFragment">
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        app:layout_constraintBottom_toBottomOf="@id/editName"
+        app:layout_constraintEnd_toStartOf="@id/editName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosage: "
+        app:layout_constraintBottom_toBottomOf="@id/editDosage"
+        app:layout_constraintEnd_toStartOf="@id/editDosage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editDosage" />
+
+    <EditText
+        android:id="@+id/editDosage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelDosage"
+        app:layout_constraintTop_toBottomOf="@id/editName" />
+
+    <RadioButton
+        android:id="@+id/radioButtonSunday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="S"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/labelTimes"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonMonday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editDosage" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMonday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="M"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonSunday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonTuesday"
+        app:layout_constraintStart_toEndOf="@id/radioButtonSunday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonSunday" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTuesday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="T"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonMonday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonWednesday"
+        app:layout_constraintStart_toEndOf="@id/radioButtonMonday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonMonday" />
+
+    <RadioButton
+        android:id="@+id/radioButtonWednesday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="W"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonTuesday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonThursday"
+        app:layout_constraintStart_toEndOf="@id/radioButtonTuesday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonTuesday" />
+
+    <RadioButton
+        android:id="@+id/radioButtonThursday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="T"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonWednesday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonFriday"
+        app:layout_constraintStart_toEndOf="@id/radioButtonWednesday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonWednesday" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFriday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonThursday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/radioButtonSaturday"
+        app:layout_constraintStart_toEndOf="@id/radioButtonThursday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonThursday" />
+
+    <RadioButton
+        android:id="@+id/radioButtonSaturday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_radio_day"
+        android:button="@null"
+        android:gravity="center"
+        android:text="S"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonFriday"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/radioButtonFriday"
+        app:layout_constraintTop_toTopOf="@id/radioButtonFriday" />
+
+    <TextView
+        android:id="@+id/labelTimes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Times:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonSunday" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTimes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelTimes" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/newTimeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTimes">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layerType="hardware"
+            app:layout_constraintBottom_toTopOf="@id/btnSaveTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSaveTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timePicker" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/newTimeButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+ time"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTimeLayout" />
+
+    <Button
+        android:id="@+id/saveMedicineButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

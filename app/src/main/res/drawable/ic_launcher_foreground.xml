@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Coração branco -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256 160
+            C230 120 170 125 170 190
+            C170 250 230 290 256 325
+            C282 290 342 250 342 190
+            C342 125 282 120 256 160Z"/>
+
+    <!-- Sinal de + (vertical) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M244,200 h24 v80 h-24 z"/>
+
+    <!-- Sinal de + (horizontal) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M216,228 h80 v24 h-80 z"/>
+
+</vector>
